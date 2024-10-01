@@ -37,7 +37,7 @@ app.use("/api/v1/service", service);
 app.use("/api/v1/event", event);
 app.use("/api/v1/user", userProfile);
 
-app.get("/api/get", (req, res) => {
+app.get("/", (req, res) => {
   res.send("Hello Express...!");
 });
 
