@@ -41,6 +41,6 @@ app.get("/api/get", (req, res) => {
   res.send("Hello Express...!");
 });
 
-app.listen(process.env.PORT || port, () => {
+app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
