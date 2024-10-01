@@ -11,7 +11,7 @@ const service = require("./routes/service");
 const event = require("./routes/event");
 
 //! Port for running NodeJS
-const port = 5000;
+const port = 8000;
 
 //! Configure env
 dotenv.config();
@@ -41,6 +41,6 @@ app.get("/api/get", (req, res) => {
   res.send("Hello Express...!");
 });
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Server is running on port ${port}`);
 });
